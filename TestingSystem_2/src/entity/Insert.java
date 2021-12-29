@@ -305,7 +305,8 @@ public class Insert {
 			System.out.println("phong ban: " + arrayacc10[e].department.name);
 			e++;
 		}
-//		while 11
+		System.out.println("======================================16,1");
+
 		Department[] departmen11 = { dep1, dep2, dep3, dep4, dep5, dep6, dep7 };
 		int u = 0;
 		while (u < departmen11.length) {
@@ -314,8 +315,8 @@ public class Insert {
 			System.out.println("Name : " + departmen11[u].name);
 			u++;
 		}
+		System.out.println("======================================16,2");
 
-//		while 12
 		Department[] departmen12 = { dep1, dep2, dep3, dep4, dep5, dep6, dep7 };
 		int i = 0;
 		while (i < 2) {
@@ -324,19 +325,48 @@ public class Insert {
 			System.out.println("Name : " + departmen12[i].name);
 			i++;
 		}
-//		while 13
-		Account[] arrayACC13 = { acc1, acc2, acc3, acc4 };
-		int r = 0;
-		while (r < arrayACC13.length) {
-			if (r != 1) {
-				System.out.println("Thông tin account thứ " + (r + 1) + "là:");
-				System.out.println("email:" + arrayACC1[r].email);
-				System.out.println("phong ban: " + arrayACC13[r].department.name);
-				System.out.println("fullname:" + arrayACC13[r].fullName);
-				System.out.println("possition:" + arrayACC13[r].pos.name);
-				r++;
+
+		System.out.println("======================================16,4");
+
+		Account[] arrayACC14 = { acc1, acc2, acc3, acc4 };
+		int q = 0;
+		while (q < arrayACC14.length) {
+			if (arrayACC14[q].id < 4) {
+				System.out.println("Thông tin account thứ " + (q + 1) + "là:");
+				System.out.println("email:" + arrayACC1[q].email);
+				System.out.println("phong ban: " + arrayACC14[q].department.name);
+				System.out.println("fullname:" + arrayACC14[q].fullName);
+				System.out.println("Chuc vu:" + arrayACC14[q].pos.name);
+				q++;
+			}
+
+		}
+		System.out.println("======================================16,5");
+		int i1 = 0;
+		while (i1 <= 20) {
+			if (i1 % 2 == 0) {
+				System.out.println("i = " + i1);
 			}
 		}
+		System.out.println("Question17======================================DO_While");
+		Account[] arrayacc1 = { acc1, acc2 };
+		int o = 0;
+		do {
+			System.out.println("Thông tin account thứ " + (o + 1) + "là:");
+			System.out.println("email:" + arrayacc1[o].email);
+			System.out.println("phong ban: " + arrayacc1[o].department.name);
+			o++;
+		} while (o < arrayacc1.length);
+//		Exercise 2 (Optional): System out printf
+//		Question 1:
+//		Khai báo 1 số nguyên = 5 và sử dụng lệnh System out printf để in ra số
+//		nguyên đó
+		System.out.println("Exercise 2=================================Question 1");
+		int i2=5;
+		System.out.println("%d%n" + i2);
 		
+//		Khai báo 1 số nguyên = 100 000 000 và sử dụng lệnh System out printf để in
+//				ra số nguyên đó thành định dạng như sau: 100,000,000
+		System.out.println("Exercise 2=================================Question 2");
 	}
 }
