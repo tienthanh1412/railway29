@@ -1,6 +1,7 @@
 package entity;
 
 import java.time.LocalDate;
+import java.util.Locale;
 
 import enums.posName;
 
@@ -8,6 +9,7 @@ public class Insert {
 	public static void main(String[] args) {
 
 //	insert DEPARTMENT
+
 		Department dep1 = new Department(1, "Phong Ky Thuat 1");
 		Department dep2 = new Department(2, "Phong Ky Thuat 2");
 		Department dep3 = new Department(3, "Phong Dev 1");
@@ -325,7 +327,21 @@ public class Insert {
 			System.out.println("Name : " + departmen12[i].name);
 			i++;
 		}
+		System.out.println("======================================16,3");
 
+		Account[] arrayACC13 = { acc1, acc2, acc3, acc4 };
+		int r = 0;
+		while (r < arrayACC13.length) {
+			if (r != 1) {
+				System.out.println("Thông tin account thứ " + (r + 1) + "là:");
+				System.out.println("id :" + arrayACC13[r].id);
+				System.out.println("email:" + arrayACC13[r].email);
+				System.out.println("phong ban: " + arrayACC13[r].department.name);
+				System.out.println("fullname:" + arrayACC13[r].fullName);
+				System.out.println("chuc vu:" + arrayACC13[r].pos.name);
+				r++;
+			}
+		}
 		System.out.println("======================================16,4");
 
 		Account[] arrayACC14 = { acc1, acc2, acc3, acc4 };
@@ -357,16 +373,6 @@ public class Insert {
 			System.out.println("phong ban: " + arrayacc1[o].department.name);
 			o++;
 		} while (o < arrayacc1.length);
-//		Exercise 2 (Optional): System out printf
-//		Question 1:
-//		Khai báo 1 số nguyên = 5 và sử dụng lệnh System out printf để in ra số
-//		nguyên đó
-		System.out.println("Exercise 2=================================Question 1");
-		int i2=5;
-		System.out.println("%d%n" + i2);
-		
-//		Khai báo 1 số nguyên = 100 000 000 và sử dụng lệnh System out printf để in
-//				ra số nguyên đó thành định dạng như sau: 100,000,000
-		System.out.println("Exercise 2=================================Question 2");
+
 	}
 }
